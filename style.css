@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&display=swap');
+
+:root{
+    --cinza-escuro: #3A404E;
+    --cinza-claro: #667085;
+    --cinza: #101828;
+    --marrom: #8E2424;
+    --branco: #ffffff;
+    --cor-de-fundo-botoes: rgba(142, 36, 36, 0.05);
+    --cor-das-bordas: #EAECF0;
+    --cor-de-fundo-secao: rgba(196, 25, 25, 0.03);
+    --cor-fundo-rodape: #F9FAFB;
+    --cor-da-sombra: rgba(16, 24, 40, 0.05);
+    --borda-input: #D0D5DD;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho {
+    margin-top: 20px;
+    font-family:'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 98px;
+}
+
+.cabecalho-imagem {
+    width: 24px;
+    padding: 0 2px 0 0;
+}
+
+.cabecalho-link-titulo {
+    color: var(--cinza);
+    text-decoration: none;
+}
+
+.cabecalho-link {
+    text-decoration: none;
+    color: var(--cinza-claro);
+}
+
+.cabecalho-logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.cabecalho-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    color: var(--cinza-claro);
+    font-size: 16px;
+}
+
+.cabecalho-botao {
+    font-family:'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+.cabecalho-botao-cadastrar {
+    padding: 15px 15px 15px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--marrom);
+    color: white; 
+}
+
+.cabecalho-botao-entrar {
+    border: none;
+    background-color: white;
+    color: var(--cinza-claro);
+}
+
+.escopo-sobre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Inter', sans-serif;
+    margin-bottom: 98px;
+}
+
+.escopo-pagina {
+    color: var(--marrom);
+    font-weight: 600;
+    font-size: 16px;
+   
+}
+
+.escopo-titulo {
+    color: var(--cinza);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.escopo-texto {
+    font-weight: 400;
+    color: var(--cinza-claro);
+    font-size: 24px;
+    text-align: center;
+    width: 950px;
+}
+
+.cabecalho-link:hover, .cabecalho-botao-entrar:hover {
+    color: var(--cinza);
+ }
+
+.cabecalho-botao-cadastrar:hover, .rodape-itens-botao:hover {
+    background-color: var(--cinza);
+}
+
+.cabecalho-link-titulo:hover {
+    color: var(--cinza-claro);
+}
+
+
+.metricas-itens {
+   width: 1200px;
+    font-family:'Inter', sans-serif;
+    display: flex;
+    gap: 32px;
+    margin: 20px 40px;
+    padding: 50px 40px;
+}
+
+.metricas-itens-projetos, .metricas-itens-colaboradores, .metricas-itens-downloads, .metricas-itens-review {
+    width: 380px;
+}
+
+.metricas-titulo {
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0;
+    color: var(--marrom);
+}
+
+.metricas-subtitulo {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--cinza);
+}
+
+.metricas-texto {
+    color: var(--cinza-claro);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.vagas {
+    
+    font-family:'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 128px;
+}
+
+.vagas-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--marrom);
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 12px;
+    padding: 5px 10px;
+}
+
+.vagas-subtitulo {
+    margin: 0 0 20px 0;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cinza);
+}
+
+.vagas-texto {
+    margin-bottom: 64px;
+    color: var(--cinza-claro);
+}
+
+.relatos{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Inter', sans-serif;
+    margin: 100px;
+    text-align: center;
+    background-color: rgba(142, 36, 36, 0.05);
+    padding: 5%;
+    border-radius: 16px;
+}
+
+.relatos-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--marrom);
+}
+
+.relatos-texto {
+    font-size: 36px;
+    color: var(--cinza);
+}
+
+.relatos-imagem {
+    height: 86px;
+    width: 86px;
+}
+
+.relatos-nome {
+    font-weight: 500;
+    color: var(--cinza);
+    font-size: 16px;
+}
+
+.relatos-cargo {
+    font-weight: 400;
+    color: var(--cinza-claro);
+    margin: 0;
+    font-size: 14px;
+}
+
+.cargos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.cargos-design-categoria {
+    font-size: 20px;
+    color: var(--cinza);
+}
+
+.cargos-tudo {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--cor-das-bordas);
+    padding: 20px 20px 10px 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.cargos-tudo-titulo {
+    width: 100%;
+    font-size: 18px;
+    margin: 10px 0px 20px 0px;
+    color: var(--cinza);
+}
+
+.cargos-tudo-remuneracao {
+    margin-left: 30px;
+    
+}
+
+.cargos-tudo-nivel, .cargos-tudo-remuneracao {
+    color: var(--cinza-claro);
+}
+
+.cargos-software-categoria {
+    margin-top: 10%;
+    font-size: 20px;
+    color: var(--cinza);
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.rodape {
+    font-family: 'Inter', sans-serif;
+    padding: 5%;
+    background-color: var(--cor-fundo-rodape);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape-itens {
+    display: flex;
+    align-items: center;
+}
+
+.rodape-titulo {
+    font-size: 36px;
+    color: var(--cinza);
+    font-weight: 600;
+}
+
+.rodape-subtitulo {
+    font-size: 20px;
+    color: var(--cinza-claro);
+}
+
+input::placeholder {
+    text-align: left;
+    padding: 0;
+}
+
+  input:focus {
+    outline: none;
+  }
+
+.rodape-itens-email {
+    gap: 8px;
+    height: 48px;
+    padding-left: 15px;
+    width: 350px;
+    border: 1.5px solid var(--borda-input);
+    border-radius: 8px;
+}
+
+.rodape-itens-botao {
+    margin-left: 20px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--marrom);
+    color: white;
+    font-size: 20px;
+}
+
+.rodape-itens-cop {
+    color: rgba(102, 112, 133, 0.5);
+}
+
+
+
+
+
+ 
